@@ -1,13 +1,20 @@
 # Mundo dos Achados
 
-Página de captura para o grupo de achadinhos. Site estático, sem dependências ou build.
+Página de captura responsiva, com logo, imagens ilustrativas e botão para entrar no grupo.
 
 ## Hospedagem
 
-Publique a raiz do repositório (`.`). No GitHub Pages: Settings → Pages → Deploy from a branch → main → / (root).
+Site estático, sem instalação de dependências e sem comando de build. A pasta de publicação é a raiz do repositório (`.`).
 
-Para hospedagem tradicional, envie index.html e as duas imagens juntos para a pasta pública.
+- **GitHub Pages:** em Settings → Pages, selecione Deploy from a branch, branch `main`, pasta `/ (root)` e salve.
+- **Netlify:** importe o repositório; deixe o comando de build vazio e use `.` como diretório de publicação.
+- **Vercel:** importe o repositório como projeto Other, sem comando de build e com saída `.`.
+- **Hospedagem tradicional:** envie `index.html` e as duas imagens para a pasta pública do site, mantendo os três arquivos juntos.
 
-O botão já usa o link oficial do grupo. Edite GROUP_URL em index.html para alterar o destino.
+## Editar
 
-As imagens de produtos são ilustrativas.
+Abra `index.html` para alterar os textos e estilos. O destino do botão está na constante `GROUP_URL` e já aponta para o link oficial enviado:
+
+https://api.zapiz.com.br/functions/v1/public-redirect?slug=mundodosachados
+
+As imagens de produtos são ilustrativas. A logo foi fornecida pelo proprietário.
